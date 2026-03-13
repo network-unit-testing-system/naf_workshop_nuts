@@ -44,6 +44,7 @@ description = "Python bindings for the Brotli compression library"
 optional = false
 python-versions = "*"
 groups = ["dev"]
+markers = "platform_python_implementation == \"CPython\""
 files = [
     {file = "brotli-1.2.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:99cfa69813d79492f0e5d52a20fd18395bc82e671d5d40bd5a91d13e75e468e8"},
     {file = "brotli-1.2.0-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:3ebe801e0f4e56d17cd386ca6600573e3706ce1845376307f5d2cbd32149b69a"},
@@ -210,14 +211,13 @@ xcb = ["xcffib (>=1.4.0)"]
 
 [[package]]
 name = "cairosvg"
-version = "2.7.1"
+version = "2.9.0"
 description = "A Simple SVG Converter based on Cairo"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.10"
 groups = ["dev"]
 files = [
-    {file = "CairoSVG-2.7.1-py3-none-any.whl", hash = "sha256:8a5222d4e6c3f86f1f7046b63246877a63b49923a1cd202184c3a634ef546b3b"},
-    {file = "CairoSVG-2.7.1.tar.gz", hash = "sha256:432531d72347291b9a9ebfb6777026b607563fd8719c46ee742db0aef7271ba0"},
+    {file = "cairosvg-2.9.0.tar.gz", hash = "sha256:1debb00cd2da11350d8b6f5ceb739f1b539196d71d5cf5eb7363dbd1bfbc8dc5"},
 ]
 
 [package.dependencies]
@@ -228,7 +228,7 @@ pillow = "*"
 tinycss2 = "*"
 
 [package.extras]
-doc = ["sphinx", "sphinx-rtd-theme"]
+doc = ["sphinx", "sphinx_rtd_theme"]
 test = ["flake8", "isort", "pytest"]
 
 [[package]]
